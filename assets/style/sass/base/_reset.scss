@@ -1,0 +1,19 @@
+html {
+    font-size: 65.5%;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+        border: 0;
+        text-decoration: none;
+        list-style: none;
+        transition: .3s ease;
+    }
+
+    .container {
+        max-width: 124rem;
+        margin: 0 auto;
+    }
+}

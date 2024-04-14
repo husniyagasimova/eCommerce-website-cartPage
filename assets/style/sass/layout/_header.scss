@@ -1,0 +1,126 @@
+#header {
+  font-family: "satoshi";
+  font-weight: 400;
+  .topbar {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.89rem;
+
+    .topbarContainer {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      p {
+        margin: auto;
+        a {
+          font-weight: 500;
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        margin-right: 1.6rem;
+      }
+    }
+  }
+
+  .navbar {
+    padding: 0 1.6rem;
+    .navbarContainer {
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      font-size: 1.6rem;
+      padding: 2.4rem 0;
+      .logo {
+        display: flex;
+        gap: 1.6rem;
+        .burgerMenu {
+          display: none;
+        }
+      }
+
+      .navList {
+        ul {
+          display: flex;
+          gap: 2.4rem;
+          li {
+            a {
+              color: #000;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .search {
+        background-color: #f0f0f0;
+        width: 57.7rem;
+        border-radius: 6.2rem;
+
+        padding: 1.2rem 1.6rem;
+        form {
+          display: flex;
+          align-items: center;
+          gap: 1.2rem;
+          input {
+            background-color: #f0f0f0;
+            width: 100%;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1.4rem;
+        .glass {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .topbar {
+    padding: 0 1.6rem;
+    img {
+        display: none;
+      }
+  }
+
+  .navbarContainer {
+    justify-content: space-between;
+    .logo {
+        .burgerMenu {
+            display: block !important;
+          }
+    }
+    .navList {
+        display: none;
+      }
+    .search {
+        display: none;
+      }
+    
+    .buttons {
+        .glass {
+            display: block !important;
+          }
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    .logoText {
+      max-width: 11.2rem !important;
+    }
+  }
+}

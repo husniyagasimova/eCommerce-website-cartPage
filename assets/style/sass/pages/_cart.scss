@@ -1,0 +1,253 @@
+#yourCart {
+  font-family: "satoshi";
+  padding: 0 1.6rem;
+  .access {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.16rem;
+    margin: 2.4rem 0;
+    span {
+      color: rgba(0, 0, 0, 0.6);
+      vertical-align: top;
+    }
+    img {
+      margin: 0.3rem 1.2rem 0 0.4rem;
+    }
+  }
+  h2 {
+    font-family: integral;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.6rem;
+  }
+  .carts {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.4rem 0 23rem 0;
+    position: relative;
+    .leftSide {
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      border-radius: 2rem;
+      padding: 2rem 2.4rem;
+      width: 58%;
+      .post {
+        display: flex;
+        gap: 1.6rem;
+        position: relative;
+        .postImg {
+          max-width: 12.4rem;
+          max-height: 12.4rem;
+          border-radius: 0.866rem;
+          overflow: hidden;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .postText {
+          .position {
+            position: absolute;
+            right: 0;
+          }
+          .count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            background-color: #f0f0f0;
+            // padding: 1.2rem 2rem;
+            width: 18%;
+            height: 7vh;
+            border-radius: 6.2rem;
+            bottom: 2.4rem;
+            p {
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 1.89rem;
+            }
+          }
+          h4 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.7rem;
+          }
+          p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.89rem;
+            span {
+              color: rgba(0, 0, 0, 0.6);
+            }
+          }
+          h3 {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 3.24rem;
+            margin-top: 2.4rem;
+          }
+        }
+      }
+      .border {
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 2.4rem;
+      }
+      .topMargin {
+        margin-top: 2.4rem;
+      }
+      .bottomPosition {
+        .count {
+          bottom: 0 !important;
+        }
+      }
+    }
+    .rightSide {
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      border-radius: 2rem;
+      padding: 2rem 2.4rem;
+      width: 40%;
+      height: max-content;
+      .rightContent {
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        h3 {
+          margin-bottom: 2.4rem;
+          font-size: 2.4rem;
+          font-weight: 700;
+          line-height: 3.24rem;
+        }
+        .content {
+          display: flex;
+          justify-content: space-between;
+          .p {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.7rem;
+            color: rgba(0, 0, 0, 0.6);
+          }
+          .price {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.7rem;
+            text-align: right;
+            .red {
+              color: #ff3333;
+            }
+          }
+          p,
+          h4 {
+            margin-bottom: 2rem;
+          }
+        }
+        .apply {
+          display: flex;
+          gap: 1.2rem;
+          justify-content: center;
+          .promoCode {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            background-color: #f0f0f0;
+            width: 65%;
+            height: 4.6rem;
+            border-radius: 6.2rem;
+            overflow: hidden;
+            img {
+              margin-left: 1.6rem;
+            }
+            input {
+              width: 100%;
+              background-color: #f0f0f0;
+            }
+          }
+          .applyButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: #fff;
+            width: 25%;
+            border-radius: 6.2rem;
+            font-size: 1.6rem;
+            line-height: 2.16rem;
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #000;
+          color: #fff;
+          width: 92%;
+          margin: 2.4rem auto 0 auto;
+          border-radius: 6.2rem;
+          font-size: 1.6rem;
+          height: 4.6rem;
+          line-height: 2.16rem;
+          height: 4.6rem;
+        }
+      }
+      .rightBottom {
+        border: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carts {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .rightSide,
+  .leftSide {
+    width: 100% !important;
+  }
+  .count {
+    gap: 0.5rem !important;
+    width: 20% !important;
+    bottom: 3rem !important;
+    img {
+      width: 1rem !important;
+    }
+  }
+  .applyButton {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 562px) {
+  .leftSide {
+    padding: 1.3rem !important;
+  }
+  .postImg {
+    max-width: 9.9rem !important;
+    max-height: 9.9rem !important;
+    img {
+      object-fit: cover !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+  .postText {
+    h4,
+    h3 {
+      font-size: 1.6rem !important;
+    }
+    h3 {
+      margin-top: 1rem !important;
+    }
+  }
+
+  .count {
+    width: 30% !important;
+    height: 6vh !important;
+  }
+  .post {
+    gap: 0.5rem !important;
+  }
+}
